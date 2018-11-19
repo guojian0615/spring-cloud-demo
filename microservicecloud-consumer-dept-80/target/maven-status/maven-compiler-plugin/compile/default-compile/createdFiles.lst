@@ -1,0 +1,5 @@
+com\jianguo\myrule\MyRandomBinRule.class
+com\jianguo\springcloud\DeptConsumer80.class
+com\jianguo\springcloud\controller\DeptConsumerController.class
+com\jianguo\springcloud\config\config.class
+com\jianguo\myrule\MyruleConfig.class

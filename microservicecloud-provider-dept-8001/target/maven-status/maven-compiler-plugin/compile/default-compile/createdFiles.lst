@@ -1,0 +1,5 @@
+com\jianguo\springcloud\controller\DeptController.class
+com\jianguo\springcloud\DeptProvider8001.class
+com\jianguo\springcloud\service\DeptService.class
+com\jianguo\springcloud\service\impl\DeptServiceImpl.class
+com\jianguo\springcloud\dao\DeptMapper.class

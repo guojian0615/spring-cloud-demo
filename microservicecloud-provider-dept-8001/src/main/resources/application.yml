@@ -1,0 +1,49 @@
+server:
+  port: 8001
+
+#数据源配置
+spring:
+  application:
+    name: microservicecloud-dept
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/cloud01
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: Gj20180214
+
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 20
+      max-wait-millis: 200
+
+# mybatis配置
+mybatis:
+  config-location: classpath:mybatis/mybatis-conf.xml
+  type-aliases-package: com.jianguo.springcloud.entiry
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+
+#将服务注册到eureka服务中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver7001.com:7001/eureka/ #eureka服务中心
+  instance:
+    instance-id:  microservicecloud-dept8001 #给为服务起个别名
+    prefer-ip-address: true #使访问路径显示ip地址
+
+#info信息完善
+info:
+  project:
+    name: microservicecloud-dept
+    comopany: jianguo.com
+    maintainer: jianguo@iflytek.com
+    describution: 部门信息微服务
+
+
+
+
+
+
+
